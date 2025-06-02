@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Physiology - Inicio{% endblock %}
+
+{% block content %}
+    <section class="h-screen">
+        <div class="visual-container h-1/2" style="background-image: url('{% static 'assets/img-banner-1.jpg' %}'); background-position: center; background-size: cover;">
+        </div>
+        <div class="descrip-visual-container h-1/2 bg-[#f2f3ee] flex flex-col">
+            <div class="btn-slider"></div>
+            <div class="descrip-visual p-4">
+                <p class="text-sm font-semibold">Lo Esencial</p>
+                <h2 class="text-xl tracking-[0.1px] my-2 text-[#333333]">Hecho para Hacer que tu aventura sea reconfortante y especial</h2>
+                <p class="text-[#333333] text-sm font-[400]">Hidrata tu piel y cuídala, todo en un tamaño para viajar contigo</p>
+                <a class="" href="#">Visitar toda la tienda</a>
+            </div>
+        </div>
+    </section>
+    {% endblock content %}
+
+{% block extra_js %}
+    {# Aquí puedes agregar JavaScript específico para la página de inicio #}
+{% endblock extra_js %}
